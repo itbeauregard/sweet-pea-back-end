@@ -1,3 +1,4 @@
+# Setting the variable
 <% project_name = 'full-stack-project-api' %>
 
 default: &default
@@ -7,6 +8,7 @@ default: &default
 
 development:
   <<: *default
+  # Using the variable
   database: <%= project_name %>_development
 
 test:
