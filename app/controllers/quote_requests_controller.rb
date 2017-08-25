@@ -41,7 +41,7 @@ class QuoteRequestsController < ApplicationController
   private :set_quote_request
 
   def quote_request_params
-    params.require(:fields).permit(:email, :phone, :event_type, :event_date, :color_scheme, :description)
+    params.require(:fields).permit(:email, :phone, :event_type, :event_date, :color_scheme, :description, :user_id)
   end
   private :quote_request_params
 

@@ -14,7 +14,8 @@ curl "${API}${URL_PATH}" \
       "event_type": "'"${TYPE}"'",
       "event_date": "'"${DATE}"'",
       "color_scheme": "'"${COLOR}"'",
-      "description": "'"${DESCRIPTION}"'"
+      "description": "'"${DESCRIPTION}"'",
+      "user_id": "'"${USERID}"'"
     }
   }'
 
