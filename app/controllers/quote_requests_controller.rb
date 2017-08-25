@@ -42,7 +42,7 @@ class QuoteRequestsController < ApplicationController
 
   # TODO: find out what should be within the permit parentheses
   def quote_request_params
-    params.require(:quote_request).permit(:last_name, :phone)
+    params.require(:quote_request).permit(:email, :phone)
   end
   private :quote_request_params
 
