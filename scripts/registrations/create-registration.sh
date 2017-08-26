@@ -8,14 +8,13 @@ curl "${API}${URL_PATH}" \
   --header "Content-Type: application/json" \
   --header "Authorization: Token token=$TOKEN" \
   --data '{
-    "data": {
-      "first_name": "'"${FIRST}"'",
-      "last_name": "'"${LAST}"'",
-      "phone": "'"${PHONE}"'",
+    "fields": {
       "email": "'"${EMAIL}"'",
+      "phone": "'"${PHONE}"'",
       "veg_csa": "'"${VEG}"'",
       "flower_csa": "'"${FLOWER}"'",
-      "location": "'"${LOCATION}"'"
+      "location": "'"${LOCATION}"'",
+      "user_id": "'"${USERID}"'"
     }
   }'
 
