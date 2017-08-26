@@ -9,7 +9,6 @@ class QuoteRequestsController < ApplicationController
 
   def show
     render json: @quote_request
-    # this does something
   end
 
   def create
