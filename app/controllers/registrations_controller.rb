@@ -44,7 +44,7 @@ class RegistrationsController < ApplicationController
 
   # TODO: find out what should be within the permit parentheses
   def registration_params
-    params.require(:registration).permit(:email, :phone, :veg_csa, :flower_csa, :location)
+    params.require(:fields).permit(:email, :phone, :veg_csa, :flower_csa, :location, :user_id)
   end
   private :registration_params
 end
