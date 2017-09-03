@@ -12,7 +12,8 @@ curl "${API}${URL_PATH}" \
       "password": "'"${PASSWORD}"'",
       "password_confirmation": "'"${PASSWORD}"'",
       "first_name": "'"${FIRST}"'",
-      "last_name": "'"${LAST}"'"
+      "last_name": "'"${LAST}"'",
+      "is_admin": "'"${ADMIN}"'"
     }
   }'
 
